@@ -1,11 +1,13 @@
-import logo from './logo.svg';
+import logo from './braid-paper-logo.png';
 import './App.css';
+//import './fileretrieval.js';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1>Nami is the best</h1>
+      <h1>braid.science</h1>
+      <button onClick={sayHello}>do NOT click this</button>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -21,6 +23,10 @@ function App() {
       </header>
     </div>
   );
+}
+
+function sayHello() {
+  alert('You clicked me!');
 }
 
 export default App;
